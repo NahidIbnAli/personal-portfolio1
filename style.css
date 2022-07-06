@@ -1,9 +1,8 @@
 body {
-  margin: 0;
   font-family: "poppins", sans-serif;
+  margin: 0;
   color: rgb(34, 34, 34);
 }
-
 h1 {
   font-size: 50px;
   line-height: 20px;
@@ -12,11 +11,16 @@ h1 {
 h2 {
   font-size: 40px;
 }
-
-.purple-color {
+h3 {
+  font-size: 35px;
+}
+h4 {
+  font-size: 19px;
+}
+span {
   color: #7e57c2;
 }
-.btn-purple {
+.anchor-button {
   text-decoration: none;
   background-image: linear-gradient(-45deg, #7e57c2, #d175d4);
   color: white;
@@ -24,61 +28,57 @@ h2 {
   padding: 10px 30px;
   border-radius: 5px;
 }
-
-.flex-container {
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section {
-  margin-bottom: 100px;
-}
-
-.half-width {
+.col {
   width: 37%;
 }
-.half-width img {
+.row img {
   width: 80%;
 }
-
-.image-center {
+.hero-section img {
   display: block;
   margin-left: 150px;
 }
-
-.top-banner {
-  background-image: url(./images/Untitled-2.jpg);
-}
-.experiences-section {
-  background-image: url(./images/Untitled-3.jpg);
+.hero-section {
+  background-image: url(./assets/Untitled-2.jpg);
 }
 .dream-section {
-  background-image: url(./images/Untitled-4.jpg);
+  background-image: url(./assets/Untitled-4.jpg);
 }
-
-.experiences-section .half-width {
-  padding: 40px;
-  height: 300px;
+.experiences-section h2 {
+  text-align: center;
+}
+.experiences-section .col {
   box-shadow: 10px 10px 40px #caadfc;
+  height: 280px;
+  padding: 40px;
+}
+.experiences-section .row {
+  gap: 80px;
+}
+#full-stack {
   border-left: 7px solid;
+  border-image: linear-gradient(#d175d4, #7e57c2);
   border-image-slice: 1;
 }
-
-.baby-web-developer {
-  border-image: linear-gradient(180deg, #2eff45, #1bd2d7);
+#baby-web {
+  border-left: 7px solid;
+  border-image: linear-gradient(#1bd2d7, #2eff45);
+  border-image-slice: 1;
 }
-.full-stack-developer {
-  border-image: linear-gradient(180deg, #7e57c2, cyan);
+.experiences-section h4 {
+  color: #7e57c2;
 }
-
-.experiences-section .flex-container {
-  gap: 100px;
+.experiences-section {
+  background-image: url(./assets/Untitled-3.jpg);
 }
-.experiences-section h1 {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
 footer p {
   text-align: center;
+}
+footer {
+  margin-top: 50px;
 }
